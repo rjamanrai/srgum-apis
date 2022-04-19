@@ -1,0 +1,22 @@
+.header{
+  background: rgb(228, 96, 96);
+  height: 70px;
+}
+.header ul {
+  margin: 0; 
+  display: flex;
+  flex-direction: row;
+  padding: 15px 20px;
+}
+
+.header ul li {
+  display: flex;  
+  cursor: pointer;
+}
+
+.header ul li a{
+  background: black;
+  padding: 10px;
+  margin-right: 20px;
+  color: aliceblue; 
+}
