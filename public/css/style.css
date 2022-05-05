@@ -1271,7 +1271,7 @@ a.side-menu__toggler.side-menu__close-btn:hover {
 	transition: all 0.3s ease;
 }
 
-#mainnav .menu li.item:hover:before,
+/* #mainnav .menu li.item:hover:before,
 #mainnav .menu li.item.active::before {
 	position: absolute;
 	content: '\e908';
@@ -1288,7 +1288,7 @@ a.side-menu__toggler.side-menu__close-btn:hover {
 	-ms-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
-}
+} */
 
 #mainnav .menu > li {
 	display: inline-block;

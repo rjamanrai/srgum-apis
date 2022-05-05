@@ -18,10 +18,7 @@ export default function Header() {
                   <ul className="menu">
                     <li className="item active">
                       <Link href="/">HOME </Link>
-                    </li>
-                    <li className="item">
-                      <Link href="/about-us">ABOUT US </Link>
-                    </li>
+                    </li> 
                     <li className="item">
                       <Link href="/podcasts">PODCAST </Link>
                     </li>
@@ -29,18 +26,21 @@ export default function Header() {
                       <Link href="/blog">BLOG </Link>
                     </li>
                     <li className="item">
+                      <Link href="/about-us">ABOUT US </Link>
+                    </li>
+                    <li className="item">
                       <Link href="/contact-us">CONTACT </Link>
                     </li>
                   </ul>
                 </nav>
               </div>
-              <div className="search-header fl-st-2">
+              {/* <div className="search-header fl-st-2">
                 <div className="list-menu">
                   <div className="menu-box theme-color navigation-side-menu">
                     <i className="fab fa-itunes-note"></i>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

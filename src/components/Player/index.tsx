@@ -34,8 +34,7 @@ const Player: FC<PlayerProps> = ({ isLivePlayerPage }: any) => {
     setTimeout(onPlay, 500);
   }, []);
 
-  const onPlay = () => {
-    return;
+  const onPlay = () => { 
     if (player?.current?.paused) {
       player?.current?.play();
       const speaker = speakerRef.current;
@@ -88,14 +87,13 @@ const Player: FC<PlayerProps> = ({ isLivePlayerPage }: any) => {
                 />
               )}
             </button>
-            <div className={styles.infoBox}>
+           {isLivePlayerPage && <div className={styles.infoBox}>
               <p>{playerInfo?.now_playing?.song?.text}</p>
               {playerInfo?.live?.is_live && (
                 <p>{playerInfo?.live?.is_live?.streamer_name}</p>
               )}
-              <p>Listeners : <b>{playerInfo?.listeners?.total}</b></p>
-              {/* {playerInfo && JSON.stringify(playerInfo)} */}
-            </div>
+              <p>Listeners : <b>{playerInfo?.listeners?.total}</b></p> 
+            </div>}
           </div>
         </div>
       </div>
