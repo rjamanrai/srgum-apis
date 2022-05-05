@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://srgum.com/</loc>
+  <lastmod>2022-05-05T16:46:02+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://srgum.com/about-us</loc>
+  <lastmod>2022-05-05T16:46:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://srgum.com/podcasts</loc>
+  <lastmod>2022-05-05T16:46:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://srgum.com/blog</loc>
+  <lastmod>2022-05-05T16:46:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://srgum.com/contact-us</loc>
+  <lastmod>2022-05-05T16:46:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://srgum.com/blog/890</loc>
+  <lastmod>2022-05-05T16:46:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://srgum.com/blog/index.html</loc>
+  <lastmod>2022-05-05T16:46:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://srgum.com/blog/blog-single.html</loc>
+  <lastmod>2022-05-05T16:46:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://srgum.com/blog/blog.html</loc>
+  <lastmod>2022-05-05T16:46:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://srgum.com/blog/podcast-details.html</loc>
+  <lastmod>2022-05-05T16:46:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://srgum.com/blog/index</loc>
+  <lastmod>2022-05-05T16:46:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://srgum.com/blog/show-listing.html</loc>
+  <lastmod>2022-05-05T16:46:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://srgum.com/blog/about.html</loc>
+  <lastmod>2022-05-05T16:46:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
