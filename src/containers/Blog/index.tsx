@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 
@@ -6,6 +7,13 @@ export default function Blog() {
     <div id="site-content" className="site-content clearfix">
       <div id="inner-content" className="inner-content-wrap">
         <div className="page-content">
+          <Head>
+            <title>Blogs | Srgum Radio | Punjabi Radio | Player</title>
+            <meta
+              name="title"
+              content="Blogs of Srgum Radio | Punjabi Radio "
+            />
+          </Head>
           <section className="page-title bg-st-1">
             <div className="overlay-header"></div>
             <div className="container">
@@ -114,9 +122,7 @@ export default function Blog() {
                           </Link>
                         </div>
                         <div className="btn-learn-more">
-                          <Link
-                            href={"/blog/890"}
-                          >
+                          <Link href={"/blog/890"}>
                             <i className="icon-longgg-right"></i>
                           </Link>
                         </div>
@@ -138,9 +144,7 @@ export default function Blog() {
                       <div className="box-content-news fl-shadow-1">
                         <ul className="meta fl-flex">
                           <li>
-                            <Link href={"/blog/890"} >
-                              December 7, 2021
-                            </Link>
+                            <Link href={"/blog/890"}>December 7, 2021</Link>
                           </li>
                           <li>
                             <h6 className="author">by Jhon gray</h6>
@@ -152,9 +156,7 @@ export default function Blog() {
                           </Link>
                         </div>
                         <div className="btn-learn-more">
-                          <Link
-                            href={"/blog/890"}
-                          >
+                          <Link href={"/blog/890"}>
                             <i className="icon-longgg-right"></i>
                           </Link>
                         </div>
@@ -176,9 +178,7 @@ export default function Blog() {
                       <div className="box-content-news fl-shadow-1">
                         <ul className="meta fl-flex">
                           <li>
-                            <Link href={"/blog/890"} >
-                              December 7, 2021
-                            </Link>
+                            <Link href={"/blog/890"}>December 7, 2021</Link>
                           </li>
                           <li>
                             <h6 className="author">by Jhon gray</h6>
@@ -190,9 +190,7 @@ export default function Blog() {
                           </Link>
                         </div>
                         <div className="btn-learn-more">
-                          <Link
-                            href={"/blog/890"}
-                          >
+                          <Link href={"/blog/890"}>
                             <i className="icon-longgg-right"></i>
                           </Link>
                         </div>
@@ -214,9 +212,7 @@ export default function Blog() {
                       <div className="box-content-news fl-shadow-1">
                         <ul className="meta fl-flex">
                           <li>
-                            <Link href={"/blog/890"} >
-                              December 7, 2021
-                            </Link>
+                            <Link href={"/blog/890"}>December 7, 2021</Link>
                           </li>
                           <li>
                             <h6 className="author">by Jhon gray</h6>
@@ -228,9 +224,7 @@ export default function Blog() {
                           </Link>
                         </div>
                         <div className="btn-learn-more">
-                          <Link
-                            href={"/blog/890"}
-                          >
+                          <Link href={"/blog/890"}>
                             <i className="icon-longgg-right"></i>
                           </Link>
                         </div>
@@ -252,9 +246,7 @@ export default function Blog() {
                       <div className="box-content-news fl-shadow-1">
                         <ul className="meta fl-flex">
                           <li>
-                            <Link href={"/blog/890"} >
-                              December 7, 2021
-                            </Link>
+                            <Link href={"/blog/890"}>December 7, 2021</Link>
                           </li>
                           <li>
                             <h6 className="author">by Jhon gray</h6>
@@ -266,9 +258,7 @@ export default function Blog() {
                           </Link>
                         </div>
                         <div className="btn-learn-more">
-                          <Link
-                            href={"/blog/890"}
-                          >
+                          <Link href={"/blog/890"}>
                             <i className="icon-longgg-right"></i>
                           </Link>
                         </div>
@@ -290,9 +280,7 @@ export default function Blog() {
                       <div className="box-content-news fl-shadow-1">
                         <ul className="meta fl-flex">
                           <li>
-                            <Link href={"/blog/890"} >
-                              December 7, 2021
-                            </Link>
+                            <Link href={"/blog/890"}>December 7, 2021</Link>
                           </li>
                           <li>
                             <h6 className="author">by Jhon gray</h6>
@@ -304,9 +292,7 @@ export default function Blog() {
                           </Link>
                         </div>
                         <div className="btn-learn-more">
-                          <Link
-                            href={"/blog/890"}
-                          >
+                          <Link href={"/blog/890"}>
                             <i className="icon-longgg-right"></i>
                           </Link>
                         </div>
@@ -328,9 +314,7 @@ export default function Blog() {
                       <div className="box-content-news fl-shadow-1">
                         <ul className="meta fl-flex">
                           <li>
-                            <Link href={"/blog/890"} >
-                              December 7, 2021
-                            </Link>
+                            <Link href={"/blog/890"}>December 7, 2021</Link>
                           </li>
                           <li>
                             <h6 className="author">by Jhon gray</h6>
@@ -342,9 +326,7 @@ export default function Blog() {
                           </Link>
                         </div>
                         <div className="btn-learn-more">
-                          <Link
-                            href={"/blog/890"}
-                          >
+                          <Link href={"/blog/890"}>
                             <i className="icon-longgg-right"></i>
                           </Link>
                         </div>
@@ -436,12 +418,10 @@ export default function Blog() {
                             <img src="image/recent-post1.jpg" alt="image" />
                           </div>
                           <div className="box-content fl-rela">
-                            <Link href={"/blog/890"} >
+                            <Link href={"/blog/890"}>
                               Lorem Ipsum market the printing typesetting.
                             </Link>
-                            <Link href={"/blog/890"} >
-                              december 7, 2021
-                            </Link>
+                            <Link href={"/blog/890"}>december 7, 2021</Link>
                           </div>
                         </div>
                         <hr />
@@ -450,12 +430,10 @@ export default function Blog() {
                             <img src="image/recent-post2.jpg" alt="image" />
                           </div>
                           <div className="box-content fl-rela">
-                            <Link href={"/blog/890"} >
+                            <Link href={"/blog/890"}>
                               Lorem Ipsum market the printing typesetting.
                             </Link>
-                            <Link href={"/blog/890"} >
-                              december 7, 2021
-                            </Link>
+                            <Link href={"/blog/890"}>december 7, 2021</Link>
                           </div>
                         </div>
                         <hr />
@@ -464,12 +442,10 @@ export default function Blog() {
                             <img src="image/recent-post3.jpg" alt="image" />
                           </div>
                           <div className="box-content fl-rela">
-                            <Link href={"/blog/890"} >
+                            <Link href={"/blog/890"}>
                               Lorem Ipsum market the printing typesetting.
                             </Link>
-                            <Link href={"/blog/890"} >
-                              december 7, 2021
-                            </Link>
+                            <Link href={"/blog/890"}>december 7, 2021</Link>
                           </div>
                         </div>
                       </div>

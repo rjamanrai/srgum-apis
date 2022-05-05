@@ -1,3 +1,4 @@
+import Head from "next/head";
 import React, { useEffect } from "react";
 import { setPlayerUrl } from "../../store/player";
 
@@ -11,6 +12,13 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Srgum Radio is Punjabi Live Radio Station | Srgum Radio</title>
+        <meta
+          name="title"
+          content="Srgum Radio is Punjabi Live Radio Station"
+        />
+      </Head>
       <div className="side-menu__block">
         <div className="side-menu__block-overlay custom-cursor__overlay">
           <div className="cursor"></div>

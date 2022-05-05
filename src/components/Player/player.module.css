@@ -6,6 +6,14 @@
   z-index: 999;
 }
 
+.playerBoxWrapperBig {
+  padding: 2px;
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+  z-index: 999;
+}
+
 .playerBox {
   filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
 }
@@ -18,6 +26,14 @@
   padding: 5px;
 }
 
+.wrapperBorderBig {
+  background: #e36526;
+  width: 410;
+  height: 320px;
+  clip-path: polygon(0 0, 100% 6%, 95% 67%, 8% 74%);
+  padding: 5px;
+}
+
 .wrapper {
   background: #ffffff;
   width: 200px;
@@ -25,16 +41,34 @@
   -webkit-clip-path: polygon(0 0, 97% 1%, 100% 68%, 5% 76%);
   clip-path: polygon(0 0, 100% 6%, 95% 67%, 8% 74%);
 }
+.wrapperBig {
+  background: #ffffff;
+  width: 400px;
+  height: 305px;
+  -webkit-clip-path: polygon(0 0, 97% 1%, 100% 68%, 5% 76%);
+  clip-path: polygon(0 0, 100% 6%, 95% 67%, 8% 74%);
+}
+
 .playButton {
   background: #fff;
   top: 44px;
   left: 120px;
   position: absolute;
 }
- 
+.playButtonBig {
+  background: #fff;
+  top: 150px;
+  left: 50px;
+  position: absolute;
+}
+
 .playButton:focus {
   outline: none;
 }
+.playButtonBig:focus {
+  outline: none;
+}
+
 .box {
   width: 34rem;
   height: 20rem;
@@ -228,6 +262,52 @@
   overflow: hidden;
 }
 
+.speakerBig {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: #e36526;
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  transition: 0.1s ease;
+  border: 2px solid #d85f17;
+  box-shadow: inset 2px -1rem 11rem #e36526d4, inset 1.6rem 0 0.8rem #e365268c,
+    inset 0 -1.6rem 0.8rem #e36526, inset -1.6rem 0 0.8rem #e46527,
+    0 0 0 0.25rem #292b2c;
+  z-index: 5;
+}
+
+.speakerBig::before {
+  content: "";
+  position: absolute;
+  height: 3rem;
+  width: 3rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: inherit;
+  background: radial-gradient(circle at center, #ddd, #2226);
+}
+.speakerBig:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    120deg,
+    #fff 10%,
+    #0000 10%,
+    #0000 40%,
+    #fff 40%,
+    #0000 40%,
+    #fff 45%,
+    #0000 45%
+  );
+  background-size: 10px 8px;
+  border-radius: inherit;
+}
+
 .speaker {
   width: 4rem;
   height: 4rem;
@@ -273,6 +353,7 @@
   background-size: 10px 8px;
   border-radius: inherit;
 }
+
 .rectBoxesContainer {
   position: relative;
   width: 100%;
@@ -439,4 +520,10 @@
 }
 .input {
   /* opacity: 0; */
+}
+
+.infoBox {
+  position: absolute;
+  left: 120px;
+  top: 50px;
 }

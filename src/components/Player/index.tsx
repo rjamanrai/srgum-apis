@@ -1,23 +1,41 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { FC, useEffect, useRef, useState } from "react";
 import { useSelector } from "react-redux";
-import { selectPlayerInfo, selectPlayerUrl } from "../../store/player";
+import { useAppDispatch } from "../../store";
+import {
+  selectPlayerInfo,
+  selectPlayerUrl,
+  setPlayerInfo,
+} from "../../store/player";
+import { useGetLiveInfoQuery } from "../../store/player/api";
 import styles from "./player.module.css";
 
-export default function Player() {
+interface PlayerProps {
+  isLivePlayerPage?: boolean;
+}
+
+const Player: FC<PlayerProps> = ({ isLivePlayerPage }: any) => {
   const playerUrl = useSelector(selectPlayerUrl);
   const playerInfo = useSelector(selectPlayerInfo);
   const [isPlayed, setIsPlayed] = useState(false);
-
+  const dispatch = useAppDispatch();
   const player = useRef<HTMLAudioElement>(null);
   const speakerRef = useRef<any>(null);
   const conRef = useRef<any>(null);
 
-  useEffect(() => { 
+  const { data, error, isLoading } = useGetLiveInfoQuery("s");
+
+  useEffect(() => {
+    if (!error && !isLoading && data) {
+      dispatch(setPlayerInfo(data.nowplaying));
+    }
+  }, [data, error, isLoading]);
+
+  useEffect(() => {
     setTimeout(onPlay, 500);
-  
   }, []);
 
   const onPlay = () => {
+    return;
     if (player?.current?.paused) {
       player?.current?.play();
       const speaker = speakerRef.current;
@@ -32,13 +50,32 @@ export default function Player() {
   };
 
   return (
-    <div className={styles.playerBoxWrapper} ref={conRef}>
+    <div
+      className={
+        isLivePlayerPage ? styles.playerBoxWrapperBig : styles.playerBoxWrapper
+      }
+      ref={conRef}
+    >
       <div className={styles.playerBox}>
-        <div className={styles.wrapperBorder}>
-          <div className={styles.wrapper}>
+        <div
+          className={
+            isLivePlayerPage ? styles.wrapperBorderBig : styles.wrapperBorder
+          }
+        >
+          <div
+            className={isLivePlayerPage ? styles.wrapperBig : styles.wrapper}
+          >
             <audio src={playerUrl} ref={player} autoPlay />
-            <div className={styles.speaker} ref={speakerRef} />
-            <button className={styles.playButton} onClick={onPlay}>
+            <div
+              className={isLivePlayerPage ? styles.speakerBig : styles.speaker}
+              ref={speakerRef}
+            />
+            <button
+              className={
+                isLivePlayerPage ? styles.playButtonBig : styles.playButton
+              }
+              onClick={onPlay}
+            >
               {isPlayed ? (
                 <i
                   className="fas fa-pause"
@@ -51,13 +88,19 @@ export default function Player() {
                 />
               )}
             </button>
+            <div className={styles.infoBox}>
+              <p>{playerInfo?.now_playing?.song?.text}</p>
+              {playerInfo?.live?.is_live && (
+                <p>{playerInfo?.live?.is_live?.streamer_name}</p>
+              )}
+              <p>Listeners : <b>{playerInfo?.listeners?.total}</b></p>
+              {/* {playerInfo && JSON.stringify(playerInfo)} */}
+            </div>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
-// {/* {
-//             playerInfo && JSON.stringify(playerInfo)
-//         } */}
+export default Player;
