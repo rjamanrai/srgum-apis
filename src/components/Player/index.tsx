@@ -28,7 +28,7 @@ const Player: FC<PlayerProps> = ({ isLivePlayerPage }: any) => {
     if (!error && !isLoading && data) {
       dispatch(setPlayerInfo(data.nowplaying));
     }
-  }, [data, error, isLoading]);
+  }, [data, error, isLoading, dispatch]);
 
   useEffect(() => {
     setTimeout(onPlay, 500);
