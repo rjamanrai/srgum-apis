@@ -80,129 +80,69 @@ export default function Home() {
           <div className="page-content">
             <section className="page-title bg-st-2">
               <div className="container-fluid">
-                <div className="overlay-header2"></div>
+                <div className="overlay-header2"  style={{ zIndex: 3 }}></div>
                 <div className="row">
                   <div className="col-12">
-                    <div className="carousel-banner">
-                      <div
-                        className="themesflat-carousel clearfix wow fadeInUp"
-                        data-margin="30"
-                        data-item="1"
-                        data-item2="1"
-                        data-item3="1"
-                        data-item4="1"
-                        data-auto="true"
-                      >
-                        <div className="owl-carousel owl-theme none dots-none">
-                          <div className="slide-item">
-                            <h2 className="title white-color fl-serif">
-                              Feel <br /> The Music
-                            </h2>
-                            <p className="sub-title white-color ">
-                              Interacting with your audience creating new
-                              relationships, nurturing existing ones, and
-                              responding to feedback.
-                            </p>
-                            <div className="btn-slide">
-                              <a
-                                href="#"
-                                className="themesflat-button3 bg-white st-1 fl-icon player-m play-pause-button"
-                              >
-                                <span className="box-icon ">
-                                  <i className="fas fa-play"></i>
-                                </span>
-                                Listen Now
-                              </a>
-                              <a
-                                href="podcast-play.html"
-                                className="themesflat-button3 bg-white st-2"
-                              >
-                                <span className="icon-btn">
-                                  <i className="icon-musical-note"></i>
-                                </span>
-                                Browse All
-                              </a>
-                            </div>
-                            <div className="list-social">
-                              <ul>
-                                <li>
-                                  <a href="#" className="fl-hv1 active">
-                                    <i className="fab fa-facebook-square"></i>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#" className="fl-hv1">
-                                    <i className="fab fa-twitter"></i>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#" className="fl-hv1 fl-st-2">
-                                    <i className="fab fa-instagram"></i>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#" className="fl-hv1">
-                                    <i className="fab fa-linkedin"></i>
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div className="slide-item">
-                            <h2 className="title white-color fl-serif">
-                              Feel <br /> The Music
-                            </h2>
-                            <p className="sub-title white-color ">
-                              Interacting with your audience creating new
-                              relationships, nurturing existing ones, and
-                              responding to feedback.
-                            </p>
-                            <div className="btn-slide">
-                              <a
-                                href="#"
-                                className="themesflat-button3 bg-white st-1 fl-icon player-m play-pause-button"
-                              >
-                                <span className="box-icon ">
-                                  <i className="fas fa-play"></i>
-                                </span>
-                                Listen Now
-                              </a>
-                              <a
-                                href="podcast-play.html"
-                                className="themesflat-button3 bg-white st-2"
-                              >
-                                <span className="icon-btn">
-                                  <i className="icon-musical-note"></i>
-                                </span>
-                                Browse All
-                              </a>
-                            </div>
-                            <div className="list-social">
-                              <ul>
-                                <li>
-                                  <a href="#" className="fl-hv1 active">
-                                    <i className="fab fa-facebook-square"></i>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#" className="fl-hv1">
-                                    <i className="fab fa-twitter"></i>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#" className="fl-hv1 fl-st-2">
-                                    <i className="fab fa-instagram"></i>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#" className="fl-hv1">
-                                    <i className="fab fa-linkedin"></i>
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
+                    <div className="carousel-banner" style={{ zIndex: 9 }}>
+                      <div className="slide-item">
+                        <h2
+                          className="title white-color fl-serif"
+                          style={{ zIndex: 9 }}
+                        >
+                          Feel <br /> The Music
+                        </h2>
+                        <p className="sub-title white-color ">
+                          Interacting with your audience creating new
+                          relationships, nurturing existing ones, and responding
+                          to feedback.
+                        </p>
+                        <div className="btn-slide">
+                          <a
+                            href="#"
+                            className="themesflat-button3 bg-white st-1 fl-icon player-m play-pause-button"
+                          >
+                            <span className="box-icon ">
+                              <i className="fas fa-play"></i>
+                            </span>
+                            Listen Now
+                          </a>
+                          <a
+                            href="podcast-play.html"
+                            className="themesflat-button3 bg-white st-2"
+                          >
+                            <span className="icon-btn">
+                              <i className="icon-musical-note"></i>
+                            </span>
+                            Browse All
+                          </a>
                         </div>
+                        <div className="list-social">
+                          <ul>
+                            <li>
+                              <a href="#" className="fl-hv1 active">
+                                <i className="fab fa-facebook-square"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" className="fl-hv1">
+                                <i className="fab fa-twitter"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" className="fl-hv1 fl-st-2">
+                                <i className="fab fa-instagram"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" className="fl-hv1">
+                                <i className="fab fa-linkedin"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        {/* </div>
+                          
+                        </div> */}
                       </div>
                     </div>
                   </div>

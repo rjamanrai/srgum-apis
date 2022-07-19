@@ -36,3 +36,11 @@ a {
     transform: scale(1.05);
   }
 }
+
+.carousel-banner .title, .carousel-banner .sub-title, .carousel-banner .btn-slide, .carousel-banner .list-social{
+  opacity: 1 !important;
+  z-index: 9 !important;
+}
+.slide-item{
+  z-index: 5 !important;
+}
